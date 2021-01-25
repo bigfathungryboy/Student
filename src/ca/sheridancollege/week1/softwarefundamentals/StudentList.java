@@ -7,28 +7,29 @@ package ca.sheridancollege.week1.softwarefundamentals;
 
 /**
  *
- * @author matth
+ * @author asidhu
  */
 public class StudentList {
-     public static void main(String[] args) {
-        //1. Create an array of Students
-        Student[] sList = new Student[5];
+    
+    public static void main(String[] args) {
         
-        //2. Put names in the array 
-        for(int i=0;i<=sList.length-1;i++)
+        //1. Create an array of 5 students.
+        Student [] sList= new Student[5];
+        
+        //2. Add student names 
+        for (int i=0;i<sList.length;i++)
         {
-            sList[i] = new Student();
-            sList[i].setName("Student" + (i+1));
+            sList[i]=new Student();
+            sList[i].setName("Student" +(i+1));
         }
         
-        //3. Print the array
-        for (Student s:sList) {
-            System.out.println("The student name is: " + s.getName());
+        //3. Print the student names
+        for (int i=0;i<sList.length;i++)
+        {
+            System.out.println("Student name is: " + sList[i].getName());
+          
         }
         
-        }
-            
     }
     
-         
-
+}
